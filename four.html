@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Изменение содержимого элемента</title>
+</head>
+<body>
+  <h1 id="myHeading">Исходный текст</h1>
+  <button onclick="changeContent()">Изменить текст</button>
+
+  <script>
+    function changeContent() {
+      const heading = document.getElementById("myHeading");
+      heading.textContent = "Текст был изменен!";
+    }
+  </script>
+</body>
+</html>

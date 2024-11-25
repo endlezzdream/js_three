@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Показ/Скрытие меню</title>
+  <style>
+    .menu {
+      display: none;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    .menu.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Меню</h1>
+  <button id="toggleMenuBtn">Показать/Скрыть меню</button>
+  <div class="menu" id="menu">
+    <ul>
+      <li>Пункт 1</li>
+      <li>Пункт 2</li>
+      <li>Пункт 3</li>
+    </ul>
+  </div>
+
+  <script>
+    const toggleMenuBtn = document.getElementById("toggleMenuBtn");
+    const menu = document.getElementById("menu");
+
+    toggleMenuBtn.addEventListener("click", function() {
+      menu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

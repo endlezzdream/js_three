@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Добавление элемента списка</title>
+</head>
+<body>
+  <h1>Список элементов</h1>
+  <ul id="myList">
+    <li>Элемент 1</li>
+    <li>Элемент 2</li>
+  </ul>
+  <button onclick="addListItem()">Добавить элемент</button>
+
+  <script>
+    function addListItem() {
+      const list = document.getElementById("myList");
+      const newItem = document.createElement("li");
+      newItem.textContent = "Новый элемент";
+      list.appendChild(newItem);
+    }
+  </script>
+</body>
+</html>

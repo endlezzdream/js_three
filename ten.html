@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Изменение текста в h2</title>
+</head>
+<body>
+  <h1>Изменение текста в h2</h1>
+  <h2 id="myHeading">Исходный текст</h2>
+  <button onclick="changeHeadingText()">Изменить текст</button>
+
+  <script>
+    function changeHeadingText() {
+      const heading = document.getElementById("myHeading");
+      heading.textContent = "Текст был изменен!";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Изменение текста в абзаце</title>
+</head>
+<body>
+  <h1>Изменение текста в абзаце</h1>
+  <p id="myParagraph">Этот текст будет изменен.</p>
+  <button onclick="changeText()">Изменить текст</button>
+
+  <script>
+    function changeText() {
+      const paragraph = document.getElementById("myParagraph");
+      paragraph.textContent = "Текст изменен";
+    }
+  </script>
+</body>
+</html>

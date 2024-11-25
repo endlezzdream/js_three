@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Добавление и удаление CSS-класса</title>
+  <style>
+    .highlighted {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="myHeading">Этот текст будет выделен</h1>
+  <button id="toggleClassBtn">Выделить/Снять выделение</button>
+
+  <script>
+    const heading = document.getElementById("myHeading");
+    const toggleClassBtn = document.getElementById("toggleClassBtn");
+
+    toggleClassBtn.addEventListener("click", function() {
+      heading.classList.toggle("highlighted");
+    });
+  </script>
+</body>
+</html>

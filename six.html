@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Удаление элемента div</title>
+</head>
+<body>
+  <div id="myDiv">
+    <h2>Этот div будет удален</h2>
+    <p>Нажмите на кнопку, чтобы удалить этот div.</p>
+  </div>
+  <button onclick="removeDiv()">Удалить div</button>
+
+  <script>
+    function removeDiv() {
+      // Получаем ссылку на элемент div
+      const divToRemove = document.getElementById("myDiv");
+
+      // Удаляем элемент div
+      divToRemove.remove();
+    }
+  </script>
+</body>
+</html>

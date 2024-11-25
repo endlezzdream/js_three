@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Создание таблицы</title>
+</head>
+<body>
+  <h1>Таблица</h1>
+  <div id="tableContainer"></div>
+
+  <script>
+    const tableContainer = document.getElementById("tableContainer");
+    const table = document.createElement("table");
+    for (let i = 0; i < 5; i++) {
+      const row = table.insertRow();
+      for (let j = 0; j < 3; j++) {
+        const cell = row.insertCell();
+        cell.textContent = `Ячейка ${i + 1}, ${j + 1}`;
+      }
+    }
+    tableContainer.appendChild(table);
+  </script>
+</body>
+</html>
